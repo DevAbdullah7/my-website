@@ -1,0 +1,135 @@
+/* ios Mobiles */
+
+/*iphone 4*/
+@media (min-width: 1170px) and (min-height: 2532px)
+{
+	.container
+	{
+	    background-position: 25% 0%;
+	}
+	.menu
+	{
+		right: 5%;
+		top: 1.75%;
+	}
+	.menu.activate
+	{
+		right: 2.5%;
+		top: 1.75%;
+	}
+
+	.nav
+	{
+		width: 100%;
+	}
+	.nav.activate
+	{
+		width: 0%;
+	}
+	.nav .logo
+	{
+		padding-top: 37.5%;
+	}
+	.nav .logo img
+	{
+		width: 30%;
+	}
+	.nav .social
+	{
+		padding-top: 10%;
+		width: 90%;
+	}
+	.social div
+	{
+		height: 20%;
+		font-size: 3rem;
+	}
+	.social div:hover
+	{
+		height: 25%;
+	}
+
+	.content
+	{
+		width: 0%;
+		opacity: 0;
+	}
+	.content.activate
+	{
+		width: 100%;
+		opacity: 1;
+	}
+	.content .navbar::before
+	{
+		transition: 0.5s;
+	}
+}
+
+/*iphone 12*/
+@media (width: 390px) and (height: 844px)
+{
+	*
+	{
+		color: red;
+	}
+	.container
+	{
+	    background-position: 25% 0%;
+	}
+	.menu
+	{
+		right: 5%;
+		top: 1.75%;
+	}
+	.menu.activate
+	{
+		right: 2.5%;
+		top: 1.75%;
+	}
+
+	.nav
+	{
+		width: 100%;
+	}
+	.nav.activate
+	{
+		width: 0%;
+	}
+	.nav .logo
+	{
+		padding-top: 37.5%;
+	}
+	.nav .logo img
+	{
+		width: 30%;
+	}
+	.nav .social
+	{
+		padding-top: 10%;
+		width: 90%;
+	}
+	.social div
+	{
+		height: 20%;
+		font-size: 3rem;
+	}
+	.social div:hover
+	{
+		height: 25%;
+	}
+
+	.content
+	{
+		width: 0%;
+		opacity: 0;
+	}
+	.content.activate
+	{
+		width: 100%;
+		opacity: 1;
+	}
+	.content .navbar::before
+	{
+		transition: 0.5s;
+	}
+}
