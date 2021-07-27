@@ -28,7 +28,7 @@
     <title>Abdullah Alqahtani | Home</title>
 </head>
 
-<body>
+<body class="body">
     <div class="container">
         <div class="menu">
             <div class="control">
@@ -108,6 +108,7 @@
                 </div>
             </div>
         </section>
+        <div class="backimg"></div>
     </div>
     <script>
         let menu = document.querySelector('.menu');
@@ -116,6 +117,7 @@
         let ul_container = document.querySelector('.ul_container')
         let nav = document.querySelector('.nav');
         let content = document.querySelector('.content');
+        let body = document.querySelector('.body')
         menu.onclick = function () {
             menu.classList.toggle('activate')
             container.classList.toggle('activate')
@@ -123,6 +125,7 @@
             ul_container.classList.toggle('activate')
             nav.classList.toggle('activate')
             content.classList.toggle('activate')
+            body.classList.toggle('activate')
         }
     </script>
 </body>
