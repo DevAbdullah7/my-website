@@ -9,6 +9,8 @@
 	body
 	{
 		overflow: hidden;
+		background-repeat: no-repeat;
+		background-size: cover;
 	}
 	.container
 	{
@@ -61,14 +63,16 @@
 	.social div
 	{
 		font-size: 3rem;
+		width: 100px;
+		height: 75px;
 	}
 	.social div:hover
 	{
-		height: 78%;
+		height: 78px;
 	}
 	.social .cards:hover a
 	{
-		font-size: 1.5em;
+		font-size: 1.25em;
 	}
 
 	.container
