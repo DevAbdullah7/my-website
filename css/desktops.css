@@ -22,10 +22,14 @@ body
 }
 .container
 {
-    overflow-x: hidden;
+    overflow: visible;
     position: relative;
     width: 100%;
     min-height: 100vh;
+}
+.container.activate
+{
+    overflow: hidden;
 }
 .menu
 {
@@ -105,9 +109,11 @@ body
     transition: 0.5s;
     box-shadow: -1px 0 5px 0 var(--black);
     background-color: rgba(0, 0, 0, 0.75);
+    visibility: visible;
 }
 .nav.activate
 {
+    visibility: hidden;
     width: 0;
 }
 .nav .logo

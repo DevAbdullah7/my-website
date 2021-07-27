@@ -6,9 +6,17 @@
 	and (max-device-width: 844px)
 	/*and (-webkit-min-device-pixel-ratio: 2)*/
 {
+	body
+	{
+		overflow: hidden;
+	}
 	.container
 	{
 	    background-position: 25% 0%;
+	}
+	.container.activate
+	{
+		overflow: hidden;
 	}
 	.menu
 	{
