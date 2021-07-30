@@ -110,6 +110,13 @@
 		width: 100%;
 		opacity: 1;
 	}
+	/*.content.activate .navbar*/
+	{
+		width: 10%;
+		right: 0;
+		min-height: 100%;
+
+	}
 	.content .navbar::before
 	{
 		transition: 0.5s;
@@ -130,6 +137,20 @@
 	.content.activate .home .clip
 	{
 		transform: translate(-50%, -50%);
+	}
+	.about .paragraph
+	{
+		width: 100%;
+		margin-right: 0;
+
+	}
+	.content.activate .about_content p
+	{
+		font-size: 12px;
+	}
+	.about_content img
+	{
+		display: none;
 	}
 	
 }
