@@ -110,7 +110,7 @@
 		width: 100%;
 		opacity: 1;
 	}
-	/*.content.activate .navbar*/
+	.content.activate .navbar
 	{
 		width: 10%;
 		right: 0;
