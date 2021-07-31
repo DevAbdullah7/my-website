@@ -105,6 +105,7 @@
     </section>
     <script>
         let menu = document.querySelector('.menu');
+        let parent = document.querySelector('.parent');
         let navbar = document.querySelector('.navbar');
         let ul_container = document.querySelector('.ul_container')
         let nav = document.querySelector('.nav');
@@ -112,6 +113,7 @@
         let body = document.querySelector('.body')
         menu.onclick = function () {
             menu.classList.toggle('activate')
+            parent.classList.toggle('activate')
             navbar.classList.toggle('activate')
             ul_container.classList.toggle('activate')
             nav.classList.toggle('activate')

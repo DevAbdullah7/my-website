@@ -6,9 +6,13 @@
 	and (max-width: 844px)
 	/*and (-webkit-min-device-pixel-ratio: 2)*/
 {
-	html
+	.html
 	{
 		overflow: hidden;
+	}
+	.html.activate
+	{
+		overflow-y: visible;
 	}
 	.body
 	{
