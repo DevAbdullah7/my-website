@@ -2,13 +2,18 @@
 
 /*iphone 4*/
 @media only screen
-	and (min-device-width: 320px) 
-	and (max-device-width: 666px)
+	and (min-width: 320px) 
+	and (max-width: 844px)
 	/*and (-webkit-min-device-pixel-ratio: 2)*/
 {
+	html
+	{
+		overflow-x: hidden;
+	}
 	.body
 	{
-		overflow: hidden;
+		overflow-y: hidden;
+		background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('../media/phonebackimg.png');
 	}
 	.body.activate
 	{
@@ -21,8 +26,8 @@
 	}
 	.menu.activate
 	{
-		right: 2.5%;
-		top: 1.75%;
+		right: 0.25%;
+		top: 0.15%;
 	}
 	.menu.activate .control i
 	{
@@ -36,10 +41,12 @@
 	.nav
 	{
 		width: 100%;
+		min-height: 100vh;
+		position: fixed;
 	}
 	.nav.activate
 	{
-		width: 0%;
+		display: none;
 	}
 	.nav .logo
 	{
@@ -64,39 +71,46 @@
 	{
 		height: 78px;
 	}
+	.social .cards a
+	{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 	.social .cards:hover a
 	{
 		font-size: 1.25em;
 	}
 
-	.container
-	{
-		overflow: hidden;
-	}
-	.container.activate
-	{
-		overflow: visible;
-	}
 	.content
 	{
 		width: 0%;
+		transform: translateX(-100%);
 		opacity: 0;
+		display: none;
 	}
 	.content.activate
 	{
 		width: 100%;
+		transform: translateX(0%);
+		opacity: 1;
+		display: block;
+	}
+	.navbar
+	{
+		opacity: 0;
+	}
+	.navbar.activate
+	{
 		opacity: 1;
 	}
-	/*.content.activate .navbar*/
-	{
-		width: 10%;
-		right: 0;
-		min-height: 100%;
-
-	}
-	.content .navbar::before
+	.navbar::before
 	{
 		transition: 0.5s;
+	}
+	.navbar .ul_container.activate
+	{
+		transform: translateX(-5%);
 	}
 	.navbar ul li
 	{
@@ -115,15 +129,27 @@
 	{
 		transform: translate(-50%, -50%);
 	}
+	.about
+	{
+		min-height: 100vh;
+		justify-content: flex-start;
+	}
+	.about .title
+	{
+		
+	}
+	.about .about_content
+	{
+		min-height: 80vh;
+	}
 	.about .paragraph
 	{
 		width: 100%;
 		margin-right: 0;
-
 	}
 	.content.activate .about_content p
 	{
-		font-size: 12px;
+		font-size: 16px;
 	}
 	.about_content img
 	{

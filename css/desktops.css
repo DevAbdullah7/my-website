@@ -22,9 +22,11 @@ html
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('../media/3.jpg');
     background-size: cover;
     background-position: 0% -100px;
-    background-attachment: fixed;
+    background-attachment: fixed;   
+    position: relative;
+    width: 100%;
     min-height: 100vh;
-    /*overflow: hidden;*/
+    overflow-x: hidden;
 }
 .body.activate
 {
@@ -188,7 +190,7 @@ html
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    font-size: 2.25rem;
+    font-size: 2.5rem;
     text-decoration: none;
     transform-style: preserve-3d;
     perspective: 500px;
@@ -204,6 +206,9 @@ html
 }
 .social .cards a
 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     color: #333;
     transition: 0.5s;
@@ -211,7 +216,7 @@ html
 .social .cards:hover a
 {
     color: var(--white);
-    font-size: 1.75em;
+    font-size: 1.5em;
     transform: translateZ(50px);
 }
 .social div:hover.twitter
@@ -230,38 +235,10 @@ html
 {
     background-color: #25d366;
 }
-
-/* side section media */
-
-/* Mobiles */
-
-
-/* iPads, Tapletes */
-
-/* Small screens, laptops */
-
-
-/* Desktops, large screens */
-
-/* ---------------------------------------------------------------------------------------------------------- */
-
-/* content */
-.content
-{
-    position: relative;
-    width: 75%;
-    min-height: 100vh;
-    left: 0;
-    transition: 0.5s;
-}
-.content.activate
-{
-    width: 100%;
-}
-.content .navbar
+.navbar
 {
     position: fixed;
-    width: 80%;
+    width: 100%;
     min-height: 50px;
     max-height: 50px;
     top: 0;
@@ -272,7 +249,7 @@ html
     transition: 0.5s;
     z-index: 1;
 }
-.content .navbar::before
+.navbar::before
 {
     position: absolute;
     content: '';
@@ -285,11 +262,11 @@ html
     transition: 0.7s;
     z-index: -5;
 }
-.content .navbar.activate
+.navbar.activate
 {
     width: 100%;
 }
-.content .navbar.activate::before
+.navbar.activate::before
 {
     transform: translateX(0%);
     background-color: rgba(0, 0, 0, 0.75);
@@ -334,7 +311,7 @@ html
     content: '';
     width: 100%;
     height: 2.5px;
-    bottom: 20px;
+    bottom: 15px;
     left: 0%;
     background-color: #fff;
     transform: scaleX(0);
@@ -356,6 +333,34 @@ html
 .navbar ul li:hover a
 {
     opacity: 1;
+}
+/* side section media */
+
+/* Mobiles */
+
+
+/* iPads, Tapletes */
+
+/* Small screens, laptops */
+
+
+/* Desktops, large screens */
+
+/* ---------------------------------------------------------------------------------------------------------- */
+
+/* content */
+.content
+{
+    position: relative;
+    width: 75%;
+    min-height: 100vh;
+    left: 0;
+    transform-origin: 50% 0%;
+    transition: 0.5s;
+}
+.content.activate
+{
+    width: 100%;
 }
 .content .home, .about
 {
@@ -488,13 +493,12 @@ html
     position: relative;
     width: 100%;
     height: 10%;
-    margin-top: 1.5rem;
 }
 .about .about_content
 {
     position: relative;
     width: 100%;
-    min-height: 100%;
+    min-height: 90%;
     display: flex;
     align-items: stretch;
     padding-top: 2.5rem;
