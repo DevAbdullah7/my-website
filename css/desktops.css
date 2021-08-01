@@ -453,7 +453,7 @@ html {
 .about .paragraph {
   width: 55%;
   margin-right: 1.5rem;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.6);
   border-radius: 10px;
   padding: 10px;
   display: flex;
