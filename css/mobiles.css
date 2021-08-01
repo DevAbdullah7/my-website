@@ -58,6 +58,9 @@
   .nav .logo img {
     width: 40%;
   }
+  .nav .logo p {
+    line-height: 32.5px;
+  }
   .nav .social {
     margin-top: 10%;
     width: 90%;
