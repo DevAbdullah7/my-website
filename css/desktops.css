@@ -355,7 +355,7 @@ html {
   transform: translate(-62.5%, -50%);
   width: 100%;
   height: 100%;
-  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(0 0 25px rgba(0, 0, 0, 1));
   z-index: 1;
   transition: 0.5s;
 }
