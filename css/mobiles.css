@@ -1,247 +1,190 @@
 /* ios Mobiles */
 
 /*iphone 4*/
-@media only screen
-	and (min-width: 320px) 
-	and (max-width: 844px)
-	/*and (-webkit-min-device-pixel-ratio: 2)*/
-{
-	.html
-	{
-		overflow: hidden;
-	}
-	.html.activate
-	{
-		overflow-y: visible;
-	}
-	.body:before
-	{
-		content: '';
-		display: block;
-		position: fixed;
-		left: 0;
-		top: 0;
-		width: 100%;
-		height: 100%;
-		z-index: -100;
-		background: url(../media/phonebackimg.png) no-repeat center center; 
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
-	}
-	.body
-	{
+@media only screen and (min-width: 320px) and (max-width: 844px) /*and (-webkit-min-device-pixel-ratio: 2) */ {
+  html {
+    overflow-x: hidden;
+  }
+  .html.activate {
+    /* overflow-y: visible; */
+  }
+  .body:before {
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -100;
+    background: url(../media/phonebackimg.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .body {
+  }
+  .body.activate {
+  }
+  .menu {
+    right: 5%;
+    top: 1.75%;
+  }
+  .menu.activate {
+    right: 0.25%;
+    top: 0.15%;
+  }
+  .menu.activate .control i {
+    font-size: 1rem;
+  }
+  .menu.activate:hover .control .left {
+    font-size: 1.5rem;
+  }
 
-	}
-	.body.activate
-	{
-		
-	}
-	.menu
-	{
-		right: 5%;
-		top: 1.75%;
-	}
-	.menu.activate
-	{
-		right: 0.25%;
-		top: 0.15%;
-	}
-	.menu.activate .control i
-	{
-		font-size: 1rem;
-	}
-	.menu.activate:hover .control .left
-	{
-		font-size: 1.5rem;
-	}
+  .nav {
+    width: 100%;
+    min-height: 100vh;
+    position: fixed;
+  }
+  .nav.activate {
+    display: none;
+  }
+  .nav .logo {
+    /*padding-top: 37.5%;*/
+  }
+  .nav .logo img {
+    width: 40%;
+  }
+  .nav .social {
+    margin-top: 10%;
+    width: 90%;
+  }
+  .social div {
+    font-size: 3rem;
+    width: 100px;
+    height: 75px;
+  }
+  .social div:hover {
+    height: 78px;
+  }
+  .social .cards a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .social .cards:hover a {
+    font-size: 1.25em;
+  }
 
-	.nav
-	{
-		width: 100%;
-		min-height: 100vh;
-		position: fixed;
-	}
-	.nav.activate
-	{
-		display: none;
-	}
-	.nav .logo
-	{
-		/*padding-top: 37.5%;*/
-	}
-	.nav .logo img
-	{
-		width: 40%;
-	}
-	.nav .social
-	{
-		margin-top: 10%;
-		width: 90%;
-	}
-	.social div
-	{
-		font-size: 3rem;
-		width: 100px;
-		height: 75px;
-	}
-	.social div:hover
-	{
-		height: 78px;
-	}
-	.social .cards a
-	{
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-	.social .cards:hover a
-	{
-		font-size: 1.25em;
-	}
-
-	.content
-	{
-		width: 0%;
-		transform: translateX(-100%);
-		opacity: 0;
-		display: none;
-	}
-	.content.activate
-	{
-		width: 100%;
-		transform: translateX(0%);
-		opacity: 1;
-		display: block;
-	}
-	.navbar
-	{
-		opacity: 0;
-	}
-	.navbar.activate
-	{
-		opacity: 1;
-	}
-	.navbar::before
-	{
-		transition: 0.5s;
-	}
-	.navbar .ul_container.activate
-	{
-		transform: translateX(-5%);
-	}
-	.navbar ul li
-	{
-		margin: 0 0.25rem;
-	}
-	.navbar ul li::after
-	{
-		height: 1.5px;
-    	bottom: 2vh;
-	}
-	.navbar ul li a
-	{
-		font-size: 0.6em;
-	}
-	.content.activate .home .clip
-	{
-		transform: translate(-50%, -50%);
-	}
-	.about
-	{
-		min-height: 100vh;
-		justify-content: flex-start;
-	}
-	.about .title
-	{
-		
-	}
-	.about .about_content
-	{
-		min-height: 80vh;
-	}
-	.about .paragraph
-	{
-		width: 100%;
-		margin-right: 0;
-	}
-	.content.activate .about_content p
-	{
-		font-size: 16px;
-	}
-	.about_content img
-	{
-		display: none;
-	}
-	
+  .content {
+    width: 0%;
+    transform: translateX(-100%);
+    opacity: 0;
+    display: none;
+  }
+  .content.activate {
+    width: 100%;
+    transform: translateX(0%);
+    opacity: 1;
+    display: block;
+  }
+  .navbar {
+    opacity: 0;
+  }
+  .navbar.activate {
+    opacity: 1;
+  }
+  .navbar::before {
+    transition: 0.5s;
+  }
+  .navbar .ul_container.activate {
+    transform: translateX(-5%);
+  }
+  .navbar ul li {
+    margin: 0 0.25rem;
+  }
+  .navbar ul li::after {
+    height: 1.5px;
+    bottom: 2vh;
+  }
+  .navbar ul li a {
+    font-size: 0.6em;
+  }
+  .content.activate .home .clip {
+    transform: translate(-50%, -50%);
+  }
+  .about {
+    min-height: 100vh;
+    justify-content: flex-start;
+  }
+  .about .title {
+  }
+  .about .about_content {
+    min-height: 80vh;
+  }
+  .about .paragraph {
+    width: 100%;
+    margin-right: 0;
+  }
+  .content.activate .about_content p {
+    font-size: 16px;
+  }
+  .about_content img {
+    display: none;
+  }
 }
 
 /*iphone 12*/
-@media (width: 390px) and (height: 844px)
-{
-	*
-	{
-		color: red;
-	}
-	.container
-	{
-	    background-position: 25% 0%;
-	}
-	.menu
-	{
-		right: 5%;
-		top: 1.75%;
-	}
-	.menu.activate
-	{
-		right: 2.5%;
-		top: 1.75%;
-	}
+@media (width: 390px) and (height: 844px) {
+  * {
+    color: red;
+  }
+  .container {
+    background-position: 25% 0%;
+  }
+  .menu {
+    right: 5%;
+    top: 1.75%;
+  }
+  .menu.activate {
+    right: 2.5%;
+    top: 1.75%;
+  }
 
-	.nav
-	{
-		width: 100%;
-	}
-	.nav.activate
-	{
-		width: 0%;
-	}
-	.nav .logo
-	{
-		padding-top: 37.5%;
-	}
-	.nav .logo img
-	{
-		width: 30%;
-	}
-	.nav .social
-	{
-		padding-top: 10%;
-		width: 90%;
-	}
-	.social div
-	{
-		height: 20%;
-		font-size: 3rem;
-	}
-	.social div:hover
-	{
-		height: 25%;
-	}
+  .nav {
+    width: 100%;
+  }
+  .nav.activate {
+    width: 0%;
+  }
+  .nav .logo {
+    padding-top: 37.5%;
+  }
+  .nav .logo img {
+    width: 30%;
+  }
+  .nav .social {
+    padding-top: 10%;
+    width: 90%;
+  }
+  .social div {
+    height: 20%;
+    font-size: 3rem;
+  }
+  .social div:hover {
+    height: 25%;
+  }
 
-	.content
-	{
-		width: 0%;
-		opacity: 0;
-	}
-	.content.activate
-	{
-		width: 100%;
-		opacity: 1;
-	}
-	.content .navbar::before
-	{
-		transition: 0.5s;
-	}
+  .content {
+    width: 0%;
+    opacity: 0;
+  }
+  .content.activate {
+    width: 100%;
+    opacity: 1;
+  }
+  .content .navbar::before {
+    transition: 0.5s;
+  }
 }
