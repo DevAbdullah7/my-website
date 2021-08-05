@@ -33,7 +33,7 @@
     height: 100%;
     z-index: -99;
     background-image: linear-gradient(to right top, #d6c8d0, #c0b5bf, #aaa3ad, #94919c, #7f7f8a, #7f7f8b, #7e7f8c, #7e7f8d, #9391a1, #a8a3b5, #bfb5c8, #d6c8dc);
-    opacity: 0.2;
+    opacity: 0.5;
   }
   .body {
     /* overflow: hidden; */
@@ -144,9 +144,13 @@
   .about .paragraph {
     width: 100%;
     margin-right: 0;
+    background-color: rgba(0, 0, 0, 0.25);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
   }
   .content.activate .about_content p {
     font-size: 16px;
+    text-shadow: 1px 1px 2.5px rgba(0, 0, 0, 0.5);
   }
   .about_content img {
     display: none;
