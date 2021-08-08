@@ -140,7 +140,7 @@
     min-height: 85vh;
     max-height: 85vh;
     flex-direction: column;
-    overflow-y: scroll;
+    overflow: hidden;
   }
   .paragraph_container {
     width: 100%;
@@ -154,25 +154,32 @@
     padding-top: 0px;
     margin-top: 15px;
   }
-  .content.activate .about_content p {
+  .content.activate .about .section1 p {
+    margin-top: 10px;
     font-size: 16px;
+    line-height: 20px;
     text-shadow: 1px 1px 2.5px rgba(0, 0, 0, 0.5);
+  }
+  .section2 {
+    transform: translateY(-10px);
   }
   .section2 .skilles {
 
   }
   .skilles .skille {
-    margin: 5px 0 0;
+    margin: 0px 0 2.5px;
+    padding: 0 5px 0 10px;
   }
   .skilles .skille h3 {
     font-size: 18px;
-    margin-left: 5px;
+    margin-left: 0px;
   }
   .skilles .skille .skilleschilds {
-    margin-left: 5px;
+    margin-left: 0px;
   }
   .skille .skl {
     height: 50px;
+    margin: 5px 10px 15px 0;
   }
   .skl h4 {
     text-align: center;
