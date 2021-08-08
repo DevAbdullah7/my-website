@@ -24,7 +24,7 @@
     background-size: cover;
   }
   .body::after {
-    content: '';
+    /* content: ''; */
     display: block;
     position: absolute;
     top: 0;
@@ -187,6 +187,9 @@
   .skille .skl {
     height: 50px;
     margin: 5px 10px 15px 0;
+  }
+  .s4 .skilleschilds .skl {
+    width: 100%;
   }
   .skl h4 {
     text-align: center;
