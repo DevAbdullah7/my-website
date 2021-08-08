@@ -65,18 +65,18 @@
     display: none;
   }
   .nav .logo {
-    /*padding-top: 37.5%;*/
     margin-bottom: 15%;
   }
   .nav .logo img {
-    width: 40%;
+    width: 50%;
+    height: 50%;
   }
   .nav .logo p {
     line-height: 30.5px;
   }
   .nav .social {
-    margin-top: 0%;
-    width: 90%;
+    margin-top: 5%;
+    width: 95%;
   }
   .social div {
     font-size: 3rem;
@@ -136,23 +136,50 @@
     min-height: 100vh;
     justify-content: flex-start;
   }
-  .about .title {
-  }
   .about .about_content {
-    min-height: 80vh;
+    min-height: 85vh;
+    max-height: 85vh;
+    flex-direction: column;
+    overflow-y: scroll;
   }
-  .about .paragraph {
+  .paragraph_container {
+    width: 100%;
+  }
+  .about .section1 {
     width: 100%;
     margin-right: 0;
-    background-color: rgba(0, 0, 0, 0.25);
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
+    padding-top: 0px;
+  }
+  .about .section1 h1 {
+    padding-top: 0px;
+    margin-top: 15px;
   }
   .content.activate .about_content p {
     font-size: 16px;
     text-shadow: 1px 1px 2.5px rgba(0, 0, 0, 0.5);
   }
-  .about_content img {
+  .section2 .skilles {
+
+  }
+  .skilles .skille {
+    margin: 5px 0 0;
+  }
+  .skilles .skille h3 {
+    font-size: 18px;
+    margin-left: 5px;
+  }
+  .skilles .skille .skilleschilds {
+    margin-left: 5px;
+  }
+  .skille .skl {
+    height: 50px;
+  }
+  .skl h4 {
+    text-align: center;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .about .photo {
     display: none;
   }
 }
