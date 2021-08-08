@@ -140,7 +140,7 @@
     min-height: 85vh;
     max-height: 85vh;
     flex-direction: column;
-    overflow: hidden;
+    overflow-y: scroll;
   }
   .paragraph_container {
     width: 100%;
@@ -151,7 +151,9 @@
     padding-top: 0px;
   }
   .about .section1 h1 {
-    padding-top: 0px;
+    width: 100%;
+    justify-content: center;
+    padding: 10px 0 0;
     margin-top: 15px;
   }
   .content.activate .about .section1 p {
@@ -162,6 +164,11 @@
   }
   .section2 {
     transform: translateY(-10px);
+  }
+  .section2 h2 {
+    width: 100%;
+    justify-content: center;
+    padding: 10px 0 0;
   }
   .section2 .skilles {
 
@@ -183,7 +190,7 @@
   }
   .skl h4 {
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 18px;
   }
   .about .photo {
