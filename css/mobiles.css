@@ -129,8 +129,26 @@
   }
   .content.activate .home .clip {
     width: 90%;
-    height: 80%;
+    height: 60%;
     transform: translate(-55.5%, -55%);
+    border-radius: 25px 0 25px 0;
+  }
+  .clip_container .clip1 p,
+  .clip_container .clip2 p {
+    right: 115px;
+    font-size: 20px;
+    line-height: 40px;
+    transform: translate(-50%, -50%) rotate(-11deg);
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.6);
+  }
+  .clip_container .clip2 p {
+    transform: translate(75px, -115px) rotate(-13deg);
+  }
+  .clip1 video {
+    transform: scaleY(2.2) scaleX(1.1) translateY(-9px);
+  }
+  .clip2 video {
+    transform: scaleY(2.2) scaleX(1.1) translateY(9px);
   }
   .about {
     min-height: 100vh;
@@ -149,12 +167,13 @@
     width: 100%;
     margin-right: 0;
     padding-top: 0px;
+    margin-top: 10px
   }
   .about .section1 h1 {
     width: 100%;
     justify-content: center;
     padding: 10px 0 0;
-    margin-top: 15px;
+    margin-top: 5px;
   }
   .content.activate .about .section1 p {
     margin-top: 10px;

@@ -21,4 +21,3 @@ menu.onclick = function () {
 //     clip1.style.left = window.pageYOffset+'px';
 //     clip2.style.left = -window.pageYOffset+'px';
 // })
-console.log('Hi Nothing');

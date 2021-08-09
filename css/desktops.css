@@ -348,12 +348,11 @@ html {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-62.5%, -50%);
+  transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
   filter: drop-shadow(0 0 25px rgba(0, 0, 0, 1));
   z-index: -1;
-
   transition: 0.5s;
 }
 .content.activate .home .clip_container {
@@ -364,10 +363,12 @@ html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 60%;
-  height: 60%;
+  width: 70%;
+  height: 70%;
   border-radius: 50px 0 50px 0;
+  overflow: hidden;
   transition: 0.5s;
+  z-index: 0;
 }
 .clip::before {
   content: "";
@@ -376,56 +377,80 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.25;
-  background: url(../media/text.jpg);
+  opacity: 0.05;
+  background: url(../media/home/test.jpg);
+  z-index: 4;
 }
 .clip1 {
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.5);
   clip-path: polygon(0 0, 35% 0, 60% 92.5%, 0 92.5%);
-  overflow: hidden;
 }
-
 .clip2 {
   background-color: rgba(0, 0, 0, 0.25);
   background-size: cover;
   clip-path: polygon(40% 7.5%, 100% 7.5%, 100% 100%, 65% 100%);
 }
-
+.clip1 video {
+  width: 100%;
+  height: 100%;
+  /* filter: blur(5px); */
+  transform: scaleY(1.13) translateY(-23px);
+}
+.clip2 video {
+  width: 100%;
+  height: 100%;
+  transform: scaleY(1.13) translateY(23px)
+}
 .clip_container .clip1 p {
   position: absolute;
   top: 50%;
-  left: 25%;
-  transform: translate(-50%, -50%);
-  font-size: 10px;
-  line-height: 10px;
+  right: 475px;
+  transform: translate(-50%, -50%) rotate(-22deg);
+  font-size: 28px;
+  line-height: 50px;
   letter-spacing: 0px;
-  font-weight: 500;
-  text-align: center;
-  color: #fff;
-  background: url(../media/clip1.png);
+  text-align: right;
+  color: #eee;
+  /* background: url(../media/clip1.png);
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: rgba(255, 255, 255, 0.3);
+  -webkit-background-clip: text; */
+  -webkit-text-fill-color: rgba(255, 255, 255, 0.4);
   z-index: 5;
   transition: 0.5s;
 }
-
-.content.activate .clip_container .clip1 p {
+.clip_container .clip1 p span:nth-child(1) {
+  /* animation: clip1 5s linear infinite reverse; */
 }
+
 
 .clip_container .clip2 p {
   position: absolute;
-  right: 10%;
+  right: 210px;
   top: 55%;
-  transform: translate(-50%, -50%);
+  font-size: 28px;
   line-height: 50px;
-  text-align: center;
+  letter-spacing: 0px;
+  transform: translate(-50%, -50%) rotate(-23deg);
+  text-align: left;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0.4);
+  /* animation: clip1 10s linear infinite alternate-reverse; */
+  z-index: 5;
 }
-
+@keyframes clip1 {
+  0% {
+    font-size: 0px;
+  }
+  50% {
+    font-size: 14px;
+  }
+  100% {
+    font-size: 28px;
+  }
+}
 .content.activate .clip_container .clip2 p {
   left: 120px;
   letter-spacing: 2px;
