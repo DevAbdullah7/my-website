@@ -1,10 +1,9 @@
 /* General Settings */
+@import url(animations.css);
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Josefin Sans", sans-serif;
-  
 }
 :root {
   --black: #000;
@@ -97,6 +96,7 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: "Josefin Sans", sans-serif;
   transition: 0.5s;
   box-shadow: -1px 0 5px 0 var(--black);
   background-color: rgba(0, 0, 0, 0.75);
@@ -222,6 +222,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: "Josefin Sans", sans-serif;
   transform-origin: 50% 100%;
   transition: 0.5s;
   z-index: 1;
@@ -364,13 +365,23 @@ html {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 70%;
-  height: 70%;
+  height: 65%;
   border-radius: 50px 0 50px 0;
   overflow: hidden;
   transition: 0.5s;
   z-index: 0;
 }
-.clip::before {
+.content.activate .clip {
+  width: 60%;
+  height: 60%;
+  transform: translate(-50%, -55%);
+}
+.clip1 {
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5);
+  clip-path: polygon(0 0, 35% 0, 60% 92.5%, 0 92.5%);
+}
+.clip2::before {
   content: "";
   position: absolute;
   top: 0;
@@ -381,11 +392,6 @@ html {
   background: url(../media/home/test.jpg);
   z-index: 4;
 }
-.clip1 {
-  background-size: cover;
-  background-color: rgba(0, 0, 0, 0.5);
-  clip-path: polygon(0 0, 35% 0, 60% 92.5%, 0 92.5%);
-}
 .clip2 {
   background-color: rgba(0, 0, 0, 0.25);
   background-size: cover;
@@ -394,68 +400,105 @@ html {
 .clip1 video {
   width: 100%;
   height: 100%;
-  /* filter: blur(5px); */
-  transform: scaleY(1.13) translateY(-23px);
+  filter: blur(2.5px);
+  transform: scaleY(1.13) translateY(-23px) rotateY(-180deg) translateX(90px);
+  clip-path: polygon(40% 7.5%, 100% 7.5%, 100% 100%, 25% 100%);
+  transition: 0.5s;
 }
-.clip2 video {
-  width: 100%;
-  height: 100%;
-  transform: scaleY(1.13) translateY(23px)
+.content.activate .clip1 video {
+  transform: scaleY(1.13) scaleX(1.1) translateY(-23px) rotateY(-180deg) translateX(90px)
 }
-.clip_container .clip1 p {
+.clip_container .clip2 .speech {
   position: absolute;
-  top: 50%;
-  right: 475px;
-  transform: translate(-50%, -50%) rotate(-22deg);
-  font-size: 28px;
-  line-height: 50px;
-  letter-spacing: 0px;
-  text-align: right;
+  width: 50%;
+  height: 100%;
+  top: 75%;
+  right: -375px;
+  transform: translate(-45%, -43.5%) rotate(0deg);
+  font-size: 40px;
+  line-height: 75px;
+  text-align: left;
+  font-family: 'Acme', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
   color: #eee;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
   /* background: url(../media/clip1.png);
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   -webkit-background-clip: text; */
-  -webkit-text-fill-color: rgba(255, 255, 255, 0.4);
+  -webkit-text-fill-color: rgba(255, 255, 255, 0.5);
   z-index: 5;
   transition: 0.5s;
 }
-.clip_container .clip1 p span:nth-child(1) {
-  /* animation: clip1 5s linear infinite reverse; */
+.content.activate .clip2 p {
+  right: 125px;
+  transform: translate(-40%, -45%) rotate(-31deg);
 }
-
-
-.clip_container .clip2 p {
+.clip2 .one, .clip2 .two {
   position: absolute;
-  right: 210px;
-  top: 55%;
-  font-size: 28px;
-  line-height: 50px;
-  letter-spacing: 0px;
-  transform: translate(-50%, -50%) rotate(-23deg);
-  text-align: left;
-  -webkit-text-fill-color: rgba(255, 255, 255, 0.4);
-  /* animation: clip1 10s linear infinite alternate-reverse; */
-  z-index: 5;
+  top: 0;
+  left: 0;
 }
+.two .sp1, .two .sp2 {
+  opacity: 0;
+}
+.sp1, .sp2, .sp3, .sp4 {
+  /* transform: scaleY(0); */
+  transform-origin: left;
+}
+.clip2 .one .sp1, 
+.clip2 .two .sp1 {
+  letter-spacing: 5px;
+  transform: translateX(-40%);
+}
+.clip2 .one .sp2, 
+.clip2 .two .sp2 {
+  letter-spacing: 11.5px;
+  transform: translateX(-30%);
+}
+.clip2 .one .sp3, 
+.clip2 .two .sp3 {
+  letter-spacing: 6px;
+  transform: translateX(-20%);
+  opacity: 0;
+}
+.clip2 .one .sp4, 
+.clip2 .two .sp4 {
+  letter-spacing: 5px;
+  transform: translateX(-10%);
+  opacity: 0;
+}
+.clip_container .clip2 .one .sp3 {
+  animation: sp3 11s linear 2s infinite;
+}
+.clip_container .clip2 .one .sp4 {
+  animation: sp4 11s linear 2s infinite;
+}
+.clip_container .clip2 .two .sp3 {
+  animation: sp33 11s linear 2s infinite reverse;
+}
+.clip_container .clip2 .two .sp4 {
+  animation: sp44 11s linear 2s infinite reverse;
+}
+
 @keyframes clip1 {
   0% {
-    font-size: 0px;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.2);
+    font-size: 6px;
   }
   50% {
-    font-size: 14px;
-  }
-  100% {
+    -webkit-text-fill-color: rgba(255, 255, 255, 1);
     font-size: 28px;
   }
+  100% {
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.2);
+    font-size: 7px;
+  }
 }
-.content.activate .clip_container .clip2 p {
-  left: 120px;
-  letter-spacing: 2px;
-  font-size: 19px;
-}
+
 
 /* About section */
 .about {
@@ -463,6 +506,7 @@ html {
   width: 90%;
   margin: 0 auto;
   justify-content: center;
+  font-family: "Josefin Sans", sans-serif;
 }
 .about .about_content {
   position: relative;
