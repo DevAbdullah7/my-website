@@ -433,9 +433,9 @@ html {
   z-index: 5;
   transition: 0.5s;
 }
-.content.activate .clip2 p {
-  right: 125px;
-  transform: translate(-40%, -45%) rotate(-31deg);
+.content.activate .clip2 .speech {
+  right: -425px;
+  transform: translate(-45%, -50%);
 }
 .clip2 .one, .clip2 .two {
   position: absolute;
@@ -446,29 +446,37 @@ html {
   opacity: 0;
 }
 .sp1, .sp2, .sp3, .sp4 {
-  /* transform: scaleY(0); */
   transform-origin: left;
+  transition: transform 0.5s;
 }
 .clip2 .one .sp1, 
 .clip2 .two .sp1 {
   letter-spacing: 5px;
-  transform: translateX(-40%);
+  transform: translateX(-37.5%);
+}
+.content.activate .clip2 .one .sp1, 
+.content.activate .clip2 .two .sp1 {
+  letter-spacing: 5px;
+  transform: translateX(-47.5%);
 }
 .clip2 .one .sp2, 
 .clip2 .two .sp2 {
   letter-spacing: 11.5px;
-  transform: translateX(-30%);
+  transform: translateX(-27.5%);
+}
+.content.activate .clip2 .one .sp2, 
+.content.activate .clip2 .two .sp2 {
+  letter-spacing: 11.5px;
+  transform: translateX(-35%);
 }
 .clip2 .one .sp3, 
 .clip2 .two .sp3 {
   letter-spacing: 6px;
-  transform: translateX(-20%);
   opacity: 0;
 }
 .clip2 .one .sp4, 
 .clip2 .two .sp4 {
   letter-spacing: 5px;
-  transform: translateX(-10%);
   opacity: 0;
 }
 .clip_container .clip2 .one .sp3 {
@@ -482,21 +490,6 @@ html {
 }
 .clip_container .clip2 .two .sp4 {
   animation: sp44 11s linear 2s infinite reverse;
-}
-
-@keyframes clip1 {
-  0% {
-    -webkit-text-fill-color: rgba(255, 255, 255, 0.2);
-    font-size: 6px;
-  }
-  50% {
-    -webkit-text-fill-color: rgba(255, 255, 255, 1);
-    font-size: 28px;
-  }
-  100% {
-    -webkit-text-fill-color: rgba(255, 255, 255, 0.2);
-    font-size: 7px;
-  }
 }
 
 
