@@ -414,7 +414,7 @@ html {
   height: 100%;
   top: 75%;
   right: -375px;
-  transform: translate(-45%, -43.5%) rotate(0deg);
+  transform: translate(-45%, -43.5%);
   font-size: 40px;
   line-height: 75px;
   text-align: left;
