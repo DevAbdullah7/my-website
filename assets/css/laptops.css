@@ -1,0 +1,12 @@
+@media only screen and (min-width: 1400px) and (max-width: 1600px) {
+  .nav .logo img {
+    width: 200px;
+    height: 200px;
+  }
+  .social div {
+    height: 75px;
+  }
+  .social div:hover {
+    height: 82.5px;
+  }
+}

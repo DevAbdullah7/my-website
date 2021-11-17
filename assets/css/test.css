@@ -1,0 +1,39 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background: rgba(0, 0, 0, 0.25);
+	min-height: 100vh;
+}
+.box {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* transform: rotate(180deg); */
+}
+img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	/* transform: rotate(180deg); */
+}
+.t1 {
+	filter: brightness(10) drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+	animation: test 5s linear infinite;
+	transform-origin: 50% 91%;
+	opacity: 50%;
+}
+@keyframes test1 {
+	0% {
+		transform: scaleY(0);
+	}
+	50% {
+		transform: scaleY(1);
+	}
+	100% {
+		transform: scaleY(0);
+	}
+}

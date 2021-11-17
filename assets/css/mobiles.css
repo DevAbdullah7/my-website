@@ -1,0 +1,1784 @@
+/* Basic */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .parent {
+    overflow: hidden;
+  }
+  .parent.activate {
+    overflow-y: visible;
+  }
+  .body:before {
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 490px;
+    height: 844px;
+    z-index: -100;
+    background: url(../media/mobilesimg.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .body::after {
+    /* content: ''; */
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -99;
+    background-image: linear-gradient(to right top, #d6c8d0, #c0b5bf, #aaa3ad, #94919c, #7f7f8a, #7f7f8b, #7e7f8c, #7e7f8d, #9391a1, #a8a3b5, #bfb5c8, #d6c8dc);
+    opacity: 0.5;
+  }
+  .body {
+    /* overflow: hidden; */
+  }
+  .body.activate {
+    /* overflow-y: visible; */
+  }
+  .menu {
+    right: 5%;
+    top: 1.75%;
+  }
+  .menu.activate {
+    right: 0.25%;
+    top: 0.15%;
+  }
+  .menu.activate .control i {
+    font-size: 1rem;
+  }
+  .menu.activate:hover .control .left {
+    font-size: 1.5rem;
+  }
+
+  .nav {
+    width: 100%;
+    min-height: 100vh;
+    position: fixed;
+  }
+  .nav.activate {
+    display: none;
+  }
+  .nav .logo img {
+    width: 50%;
+    height: 50%;
+  }
+  .nav .logo p {
+    line-height: 30.5px;
+  }
+  .nav .social {
+    margin-top: 5%;
+    width: 95%;
+  }
+  .social div {
+    font-size: 3rem;
+    width: 100px;
+    height: 75px;
+  }
+  .social div:hover {
+    height: 80px;
+  }
+  .social .cards a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .social .cards:hover a {
+    font-size: 1.25em;
+  }
+
+  .content {
+    width: 0%;
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  .content.activate {
+    width: 100%;
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  .navbar {
+    opacity: 0;
+  }
+  .navbar.activate {
+    opacity: 1;
+  }
+  .navbar::before {
+    transition: 0.5s;
+  }
+  .navbar .ul_container.activate {
+    transform: translateX(-5%);
+  }
+  .navbar ul li {
+    margin: 0 0.25rem;
+  }
+  .navbar ul li::after {
+    height: 1.5px;
+    bottom: 2vh;
+  }
+  .navbar ul a {
+    font-size: 0.6em;
+  }
+  .content.activate .home .clip {
+    width: 90%;
+    height: 60%;
+    transform: translate(-55.5%, -55%);
+    border-radius: 25px 0 25px 0;
+  }
+  .clip_container .clip1 p,
+  .clip_container .clip2 p {
+    right: 115px;
+    font-size: 20px;
+    line-height: 40px;
+    transform: translate(-50%, -50%) rotate(-11deg);
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.6);
+  }
+  .clip_container .clip2 p {
+    transform: translate(75px, -115px) rotate(-13deg);
+  }
+  .clip1 video {
+    transform: scaleY(2.2) scaleX(1.1) translateY(-9px);
+  }
+  .clip2 video {
+    transform: scaleY(2.2) scaleX(1.1) translateY(9px);
+  }
+  .about {
+    min-height: 100vh;
+    justify-content: flex-start;
+  }
+  .about .about_content {
+    min-height: 85vh;
+    max-height: 85vh;
+    flex-direction: column;
+    overflow-y: scroll;
+  }
+  .paragraph_container {
+    width: 100%;
+  }
+  .about .section1 {
+    width: 100%;
+    margin-right: 0;
+    padding-top: 0px;
+    margin-top: 10px
+  }
+  .about .section1 h1 {
+    width: 100%;
+    justify-content: center;
+    padding: 10px 0 0;
+    margin-top: 5px;
+  }
+  .content.activate .about .section1 p {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 20px;
+    text-shadow: 1px 1px 2.5px rgba(0, 0, 0, 0.5);
+  }
+  .section2 {
+    transform: translateY(-10px);
+  }
+  .section2 h2 {
+    width: 100%;
+    justify-content: center;
+    padding: 10px 0 0;
+  }
+  .section2 .skilles {
+
+  }
+  .skilles .skille {
+    margin: 0px 0 2.5px;
+    padding: 0 5px 0 10px;
+  }
+  .skilles .skille h3 {
+    font-size: 18px;
+    margin-left: 0px;
+  }
+  .skilles .skille .skilleschilds {
+    margin-left: 0px;
+  }
+  .skille .skl {
+    height: 50px;
+    margin: 5px 10px 15px 0;
+  }
+  .s4 .skilleschilds .skl {
+    width: 100%;
+  }
+  .skl h4 {
+    text-align: center;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .about .photo {
+    display: none;
+  }
+}
+/* --------------------------------------------------------------------- */
+
+/* ios Mobiles */
+
+/* iphone5 */
+@media only screen and (width: 320px) and (height: 568px) {
+  .body:before {
+    width: 320px;
+    height: 570px;
+  }
+  .menu {
+    right: 2%;
+  }
+  .menu.activate {
+    right: 0.25%;
+    top: 0%;
+    transform: translateY(-1px);
+  }
+  .menu.activate .control i, .menu.activate:hover .control .left {
+    font-size: 1rem;
+  }
+  .nav .logo img {
+    width: 45%;
+    height: 48%;
+  }
+  .nav .logo h1 {
+    font-size: 1em;
+    margin-top: 1rem;
+  }
+  .nav .logo p {
+    font-size: 1em;
+    margin-top: 1rem;
+  }
+  .nav .social {
+    margin-top: 0%;
+  }
+  .social div {
+    font-size: 2.5rem;
+    width: 75px;
+    height: 60px;
+  }
+  .social div:hover {
+    width: 75px;
+    height: 60px;
+  }
+  .social .cards:hover a {
+    font-size: 2.5rem;
+  }
+  .navbar ul a {
+    font-size: 8px;
+    letter-spacing: 0;
+  }
+  .content.activate .clip1 video {
+    transform: scaleY(2.25) scaleX(1.1) translateY(10px) rotateY(-180deg) translateX(34px);
+  }
+  .content.activate .clip2 .speech {
+    right: -100px;
+    transform: translate(-45%, -45%);
+    font-size: 10px;
+    line-height: 30px;
+  }
+  .content.activate .clip2 .one .sp1, 
+  .content.activate .clip2 .two .sp1 {
+    letter-spacing: 3px;
+    transform: translateX(-29.5%);
+  }
+  .content.activate .clip2 .one .sp2, 
+  .content.activate .clip2 .two .sp2 {
+    letter-spacing: 5px;
+    transform: translateX(-24%);
+  }
+  .clip2 .one .sp3, .clip2 .two .sp3 {
+    letter-spacing: 4px;
+    opacity: 0;
+  }
+  .clip2 .one .sp4, .clip2 .two .sp4 {
+    letter-spacing: 3px;
+    opacity: 0;
+  }
+  .content.activate .about {
+    padding-top: 11vh;
+  }
+  .about .section1 h1 {
+    margin-top: 0px;
+    font-size: 1.5em;
+    height: 40px;
+  }
+  .content.activate .about .section1 p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .section2 h2 {
+    font-size: 18px;
+    height: 35px;
+  }
+  .skilles .skille h3 {
+    font-size: 14px;
+  }
+  .skille .skl {
+    height: 45px;
+    margin-top: 7.5px;
+  }
+  .skl h4 {
+    font-size: 10px;
+    line-height: 15px;
+  }
+}
+@media only screen and (width: 568px) and (height: 320px) {
+  .body:before {
+    width: 320px;
+    height: 570px;
+    transform: rotate(-90deg) translateX(124px) translateY(124px);
+  }
+  .menu {
+    right: 2%;
+  }
+  .menu.activate {
+    right: 0.25%;
+    top: 0%;
+    transform: translateY(-5px);
+  }
+  .menu.activate .control i, .menu.activate:hover .control .left {
+    font-size: 1rem;
+  }
+  .nav .logo {
+    transform: translateY(30px);
+  }
+  .nav .logo img {
+    width: 17.5%;
+    height: 50%;
+  }
+  .nav .logo h1 {
+    font-size: 1em;
+    margin-top: 0rem;
+  }
+  .nav .logo p {
+    font-size: 1em;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    line-height: 25px;
+  }
+  .nav .social {
+    margin-top: 0%;
+  }
+  .social div {
+    font-size: 2.5rem;
+    width: 75px;
+    height: 60px;
+  }
+  .social div:hover {
+    width: 75px;
+    height: 60px;
+  }
+  .social .cards:hover a {
+    font-size: 2.5rem;
+  }
+  .navbar {
+    min-height: 40px;
+    max-height: 40px;
+  }
+  .navbar ul a {
+    font-size: 8px;
+    letter-spacing: 2px;
+  }
+  .content.activate .clip1 video {
+    transform: scaleY(1.25) scaleX(1.5) translateY(10px) rotateY(0deg) translateX(-125px);
+  }
+  .content.activate .clip2 .speech {
+    right: -200px;
+    transform: translate(-48%, -57%);
+    font-size: 10px;
+    line-height: 30px;
+  }
+  .content.activate .home .clip_container {
+    transform: translate(-45%, -45%);
+  }
+  .content.activate .clip2 .one .sp1, 
+  .content.activate .clip2 .two .sp1 {
+    letter-spacing: 3px;
+    transform: translateX(-65%);
+  }
+  .content.activate .clip2 .one .sp2, 
+  .content.activate .clip2 .two .sp2 {
+    letter-spacing: 5px;
+    transform: translateX(-45%);
+  }
+  .clip2 .one .sp3, .clip2 .two .sp3 {
+    letter-spacing: 4px;
+    opacity: 0;
+  }
+  .clip2 .one .sp4, .clip2 .two .sp4 {
+    letter-spacing: 4px;
+    opacity: 0;
+  }
+  .content.activate .about {
+    padding-top: 11vh;
+  }
+  .content.activate .about {
+    padding-top: 16vh;
+  }
+  .about .about_content {
+    min-height: 80vh;
+    max-height: 80vh;
+    overflow-y: scroll;
+  }
+  .about .section1 h1 {
+    margin-top: 0px;
+    font-size: 1.5em;
+    height: 40px;
+  }
+  .content.activate .about .section1 p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .section2 h2 {
+    font-size: 18px;
+    height: 35px;
+  }
+  .skilles .skille h3 {
+    font-size: 14px;
+  }
+  .skille .skl {
+    height: 45px;
+    margin-top: 7.5px;
+  }
+  .skl h4 {
+    font-size: 10px;
+    line-height: 15px;
+  }
+}
+
+/* iphone6, 7, 8 */
+@media only screen and (device-width: 375px) and (device-height: 667px) {
+  .body:before {
+    transform: translateY(-50px);
+    width: 375px;
+    height: 816px;
+  }
+  .menu {
+    right: 2.5%;
+  }
+  .menu.activate {
+    right: -1.75%;
+    transform: translateY(-3px);
+  }
+  .menu.activate:hover .control .left {
+    font-size: 1rem;
+  }
+  .nav .logo img {
+    width: 40%;
+  }
+  .nav .logo h1 {
+    font-size: 1.1em;
+  }
+  .nav .logo p {
+    margin-top: 1.25rem;
+    font-size: 1.1em;
+  }
+  .nav .social {
+    margin-top: 2.5%;
+  }
+  .social div {
+    width: 70px;
+    height: 65px;
+  }
+  .social div:hover {
+    width: 70px;
+    height: 65px;
+  }
+  .social .cards:hover a {
+    font-size: 3rem;
+  }
+  .navbar .ul_container.activate {
+    transform: translateX(-4%);
+  }
+  .navbar ul a {
+    letter-spacing: 1px;
+  }
+  .content.activate .clip1 video {
+    transform: scaleY(2) scaleX(1.1) translateY(0px) rotateY(-180deg) translateX(37px);
+  }
+  .content.activate .clip2 .speech {
+    right: -125px;
+    transform: translate(-47%, -52%);
+    font-size: 16px;
+    line-height: 50px;
+  }
+  .content.activate .clip2 .one .sp1, 
+  .content.activate .clip2 .two .sp1 {
+    letter-spacing: 2px;
+    transform: translateX(-34.5%);
+  }
+  .content.activate .clip2 .one .sp2, 
+  .content.activate .clip2 .two .sp2 {
+    letter-spacing: 4.5px;
+    transform: translateX(-26%);
+  }
+  .clip2 .one .sp3, .clip2 .two .sp3 {
+    letter-spacing: 2px;
+  }
+  .clip2 .one .sp4, .clip2 .two .sp4 {
+    letter-spacing: 1px;
+  }
+  .about .section1 h1 {
+    height: 40px;
+    font-size: 1.5em;
+  }
+  .content.activate .about .section1 p {
+    font-size: 14px;
+  }
+  .section2 h2 {
+    height: 40px;
+    font-size: 1.25em;
+  }
+  .skilles .skille h3 {
+    font-size: 16px;
+  }
+  .skille .skl {
+    height: 45px;
+  }
+  .skl h4 {
+    font-size: 11px;
+    line-height: 16px;
+  }
+}
+@media only screen and (device-width: 667px) and (device-height: 375px) {
+  .body:before {
+    transform: rotate(-90deg) translate(517px, -170px);
+    background: url(../media/mobilesimg.png) no-repeat center center;
+  }
+  .menu {
+    right: 2.5%;
+  }
+  .menu.activate {
+    right: -0.75%;
+    transform: translateY(-3px);
+  }
+  .menu.activate:hover .control .left {
+    font-size: 1.25rem;
+  }
+  .nav .logo {
+    transform: translateY(40px);
+  }
+  .nav .logo img {
+    width: 17.5%;
+    height: 55%;
+    transform: translateY(-30px);
+  }
+  .nav .logo h1 {
+    font-size: 1.1em;
+    margin-top: 0%;
+  }
+  .nav .logo p {
+    margin-top: 1rem;
+    font-size: 1.1em;
+  }
+  .nav .social {
+    margin-top: 2.5%;
+  }
+  .social div {
+    width: 70px;
+    height: 65px;
+  }
+  .social div:hover {
+    width: 70px;
+    height: 65px;
+  }
+  .social .cards:hover a {
+    font-size: 3rem;
+  }
+  .navbar {
+    min-height: 40px;
+  }
+  .navbar .ul_container.activate {
+    transform: translate(0%, 5%);
+  }
+  .navbar ul a {
+    letter-spacing: 1px;
+  }
+  .content.activate .clip1 video {
+    transform: scaleY(1.1) scaleX(1.5) translateY(13px) rotateY(0deg) translateX(-145px);
+  }
+  .content.activate .clip2 .speech {
+    right: -125px;
+    transform: translate(-8%, -60%);
+    font-size: 16px;
+    line-height: 36px;
+  }
+  .content.activate .clip2 .one .sp1, 
+  .content.activate .clip2 .two .sp1 {
+    letter-spacing: 6px;
+    transform: translateX(-60.5%);
+  }
+  .content.activate .clip2 .one .sp2, 
+  .content.activate .clip2 .two .sp2 {
+    letter-spacing: 8.5px;
+    transform: translateX(-43%);
+  }
+  .clip2 .one .sp3, .clip2 .two .sp3 {
+    letter-spacing: 6px;
+  }
+  .clip2 .one .sp4, .clip2 .two .sp4 {
+    letter-spacing: 6px;
+  }
+  .content.activate .about {
+    padding-top: 14vh;
+  }
+  .about .about_content {
+    min-height: 82vh;
+    max-height: 82vh;
+    overflow-y: scroll;
+  }
+  .about .section1 h1 {
+    height: 40px;
+    font-size: 1.5em;
+  }
+  .content.activate .about .section1 p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .section2 h2 {
+    height: 40px;
+    font-size: 1.25em;
+  }
+  .skilles .skille h3 {
+    font-size: 16px;
+  }
+  .skille .skl {
+    height: 40px;
+  }
+  .skl h4 {
+    font-size: 11px;
+    line-height: 16px;
+  }
+}
+
+/* iphone6 plus, 7 plus, 8 plus */
+@media only screen and (device-width: 414px) and (device-height: 736px) {
+  .body:before {
+    transform: translateY(0px);
+    width: 414px;
+    height: 736px;
+  }
+  .menu {
+    right: 2.5%;
+  }
+  .menu.activate {
+    right: -1.75%;
+    transform: translateY(-2px);
+  }
+  .menu.activate:hover .control .left {
+    font-size: 1rem;
+  }
+  .nav {
+    width: 101%;
+    min-height: 101vh;
+    right: -1px;
+  }
+  .nav .logo img {
+    width: 40%;
+    transform: translate(5px, -15px);
+  }
+  .nav .logo h1 {
+    font-size: 1.1em;
+    transform: translateX(5px);
+  }
+  .nav .logo p {
+    margin-top: 1.25rem;
+    font-size: 1.1em;
+    transform: translateX(5px);
+  }
+  .nav .social {
+    margin-top: 2.5%;
+  }
+  .social div {
+    width: 70px;
+    height: 65px;
+  }
+  .social div:hover {
+    width: 70px;
+    height: 65px;
+  }
+  .social .cards:hover a {
+    font-size: 3rem;
+  }
+  .navbar.activate::before {
+    transform: translateX(0%) scaleX(1.5);
+  }
+  .navbar .ul_container.activate {
+    transform: translateX(-2%);
+  }
+  .navbar ul a {
+    letter-spacing: 1px;
+    font-size: 0.75em;
+  }
+  .content.activate .clip1 video {
+    transform: scaleY(2) scaleX(1.1) translateY(0px) rotateY(-180deg) translateX(44px);
+  }
+  .content.activate .clip2 .speech {
+    right: -125px;
+    transform: translate(-40%, -52%);
+    font-size: 16px;
+    line-height: 55px;
+  }
+  .content.activate .clip2 .one .sp1, 
+  .content.activate .clip2 .two .sp1 {
+    letter-spacing: 2px;
+    transform: translateX(-34.5%);
+  }
+  .content.activate .clip2 .one .sp2, 
+  .content.activate .clip2 .two .sp2 {
+    letter-spacing: 3.5px;
+    transform: translateX(-26%);
+  }
+  .clip2 .one .sp3, .clip2 .two .sp3 {
+    letter-spacing: 2px;
+  }
+  .clip2 .one .sp4, .clip2 .two .sp4 {
+    letter-spacing: 1px;
+  }
+  .about .section1 h1 {
+    height: 40px;
+    font-size: 1.5em;
+  }
+  .content.activate .about .section1 p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .section2 h2 {
+    height: 40px;
+    font-size: 1.25em;
+  }
+  .skilles .skille h3 {
+    font-size: 16px;
+  }
+  .skille .skl {
+    height: 45px;
+  }
+  .skl h4 {
+    font-size: 11px;
+    line-height: 16px;
+  }
+}
+@media only screen and (device-width: 736px) and (device-height: 414px) {
+  .body:before {
+    transform: rotate(-90deg) translate(497px, -161px) scale(1.1);
+    background: url(../media/mobilesimg.png) no-repeat center center;
+  }
+  .menu {
+    right: 2.5%;
+  }
+  .menu.activate {
+    right: -0.75%;
+    transform: translateY(-3px);
+  }
+  .menu.activate:hover .control .left {
+    font-size: 1.25rem;
+  }
+  .nav {
+    width: 101%;
+    min-height: 101vh;
+    right: -1px;
+  }
+  .nav .logo {
+    transform: translateY(40px);
+  }
+  .nav .logo img {
+    width: 17.5%;
+    height: 55%;
+    transform: translateY(-30px);
+  }
+  .nav .logo h1 {
+    font-size: 1.1em;
+    margin-top: 0%;
+  }
+  .nav .logo p {
+    margin-top: 1rem;
+    font-size: 1.1em;
+  }
+  .nav .social {
+    margin-top: 2.5%;
+  }
+  .social div {
+    width: 70px;
+    height: 65px;
+  }
+  .social div:hover {
+    width: 70px;
+    height: 65px;
+  }
+  .social .cards:hover a {
+    font-size: 3rem;
+  }
+  .navbar {
+    min-height: 40px;
+  }
+  .navbar.activate::before {
+    transform: translateX(0%) scaleX(1.5);
+  }
+  .navbar .ul_container.activate {
+    transform: translate(0%, 5%);
+  }
+  .navbar ul a {
+    letter-spacing: 1px;
+  }
+  .content.activate .clip1 video {
+    transform: scaleY(1.1) scaleX(1.5) translateY(13px) rotateY(0deg) translateX(-145px);
+  }
+  .content.activate .clip2 .speech {
+    right: -125px;
+    transform: translate(-8%, -60%);
+    font-size: 16px;
+    line-height: 36px;
+  }
+  .content.activate .clip2 .one .sp1, 
+  .content.activate .clip2 .two .sp1 {
+    letter-spacing: 6px;
+    transform: translateX(-60.5%);
+  }
+  .content.activate .clip2 .one .sp2, 
+  .content.activate .clip2 .two .sp2 {
+    letter-spacing: 8.5px;
+    transform: translateX(-43%);
+  }
+  .clip2 .one .sp3, .clip2 .two .sp3 {
+    letter-spacing: 6px;
+  }
+  .clip2 .one .sp4, .clip2 .two .sp4 {
+    letter-spacing: 6px;
+  }
+  .content.activate .about {
+    padding-top: 14vh;
+  }
+  .about .about_content {
+    min-height: 82vh;
+    max-height: 82vh;
+    overflow-y: scroll;
+  }
+  .about .section1 h1 {
+    height: 40px;
+    font-size: 1.5em;
+  }
+  .content.activate .about .section1 p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .section2 h2 {
+    height: 40px;
+    font-size: 1.25em;
+  }
+  .skilles .skille h3 {
+    font-size: 16px;
+  }
+  .skille .skl {
+    height: 40px;
+  }
+  .skl h4 {
+    font-size: 11px;
+    line-height: 16px;
+  }
+}
+
+/* iphone x, xs */
+@media only screen and (device-width: 375px) and (device-height: 812px) {
+  .body:before {
+    transform: translateX(-15px);
+    width: 412px;
+    height: 812px;
+  }
+  .menu {
+    right: 1.5%;
+  }
+  .menu.activate {
+    right: -1.75%;
+    transform: translateY(-1px);
+  }
+  .menu.activate:hover .control .left {
+    font-size: 1rem;
+  }
+  .nav .logo img {
+    width: 45%;
+    height: 40%;
+    transform: translate(5px, -15px);
+  }
+  .nav .logo h1 {
+    font-size: 1.1em;
+    transform: translateX(5px);
+  }
+  .nav .logo p {
+    margin-top: 1.25rem;
+    font-size: 1.1em;
+    transform: translateX(5px);
+  }
+  .nav .social {
+    margin-top: 0%;
+  }
+  .social div {
+    width: 70px;
+    height: 65px;
+  }
+  .social div:hover {
+    width: 70px;
+    height: 65px;
+  }
+  .social .cards:hover a {
+    font-size: 3rem;
+  }
+  .navbar .ul_container.activate {
+    transform: translate(-2%, 2.5px);
+  }
+  .navbar ul a {
+    letter-spacing: 1.5px;
+    font-size: 0.6em;
+  }
+  .content.activate .clip1 video {
+    transform: scaleY(2.3) scaleX(1) translateY(-2px) rotateY(-180deg) translateX(37px);
+  }
+  .content.activate .clip2 .speech {
+    right: -125px;
+    transform: translate(-47%, -52%);
+    font-size: 16px;
+    line-height: 60px;
+  }
+  .content.activate .clip2 .one .sp1, 
+  .content.activate .clip2 .two .sp1 {
+    letter-spacing: 2px;
+    transform: translateX(-34.5%);
+  }
+  .content.activate .clip2 .one .sp2, 
+  .content.activate .clip2 .two .sp2 {
+    letter-spacing: 3.5px;
+    transform: translateX(-26%);
+  }
+  .clip2 .one .sp3, .clip2 .two .sp3 {
+    letter-spacing: 2px;
+  }
+  .clip2 .one .sp4, .clip2 .two .sp4 {
+    letter-spacing: 1px;
+  }
+  .about .section1 h1 {
+    height: 40px;
+    font-size: 1.5em;
+  }
+  .content.activate .about .section1 p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .section2 h2 {
+    height: 40px;
+    font-size: 1.25em;
+  }
+  .skilles .skille h3 {
+    font-size: 16px;
+  }
+  .skille .skl {
+    height: 45px;
+  }
+  .skl h4 {
+    font-size: 11px;
+    line-height: 16px;
+  }
+}
+@media only screen and (device-width: 812px) and (device-height: 375px) {
+  .body:before {
+    transform: rotate(-90deg) translate(521px, -97px) scale(1.1);
+    background: url(../media/mobilesimg.png) no-repeat center center;
+  }
+  .menu {
+    right: 2.5%;
+  }
+  .menu.activate {
+    right: -0.75%;
+    transform: translateY(-5px);
+  }
+  .menu.activate .control i {
+    font-size: 1.25rem;
+  }
+  .menu.activate:hover .control .left {
+    font-size: 1.25rem;
+  }
+  .nav {
+    width: 101%;
+    min-height: 101vh;
+    right: -1px;
+  }
+  .nav .logo {
+    transform: translateY(40px);
+  }
+  .nav .logo img {
+    width: 15%;
+    height: 55%;
+    transform: translateY(-30px);
+  }
+  .nav .logo h1 {
+    font-size: 1em;
+    margin-top: 0%;
+  }
+  .nav .logo p {
+    margin-top: 0.75rem;
+    font-size: 1em;
+    line-height: 25px;
+  }
+  .nav .social {
+    margin-top: 1.5%;
+  }
+  .social div {
+    width: 70px;
+    height: 65px;
+  }
+  .social div:hover {
+    width: 70px;
+    height: 65px;
+  }
+  .social .cards:hover a {
+    font-size: 3rem;
+  }
+  .navbar {
+    min-height: 40px;
+  }
+  .navbar.activate::before {
+    transform: translateX(0%) scaleX(1.5);
+  }
+  .navbar .ul_container.activate {
+    transform: translate(0%, 5%);
+  }
+  .navbar ul a {
+    letter-spacing: 2px;
+  }
+  .content.activate .clip1 video {
+    transform: scaleY(1.1) scaleX(1.5) translateY(13px) rotateY(0deg) translateX(-138px);
+  }
+  .content.activate .clip2 .speech {
+    right: -125px;
+    transform: translate(-0%, -60%);
+    font-size: 16px;
+    line-height: 40px;
+  }
+  .content.activate .clip2 .one .sp1, 
+  .content.activate .clip2 .two .sp1 {
+    letter-spacing: 6px;
+    transform: translateX(-65%);
+  }
+  .content.activate .clip2 .one .sp2, 
+  .content.activate .clip2 .two .sp2 {
+    letter-spacing: 8.5px;
+    transform: translateX(-45%);
+  }
+  .clip2 .one .sp3, .clip2 .two .sp3 {
+    letter-spacing: 6px;
+  }
+  .clip2 .one .sp4, .clip2 .two .sp4 {
+    letter-spacing: 6px;
+  }
+  .content.activate .about {
+    padding-top: 14vh;
+  }
+  .about .about_content {
+    min-height: 82vh;
+    max-height: 82vh;
+    overflow-y: scroll;
+  }
+  .about .section1 h1 {
+    height: 40px;
+    font-size: 1.5em;
+  }
+  .content.activate .about .section1 p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .section2 h2 {
+    height: 40px;
+    font-size: 1.25em;
+  }
+  .skilles .skille h3 {
+    font-size: 16px;
+  }
+  .skille .skl {
+    height: 40px;
+  }
+  .skl h4 {
+    font-size: 11px;
+    line-height: 16px;
+  }
+}
+
+/* iphone xs max, xr */
+@media only screen and (device-width: 414px) and (device-height: 896px) {
+  .body:before {
+    transform: translateX(0px);
+    width: 414px;
+    height: 896px;
+  }
+  .menu {
+    right: 1.5%;
+  }
+  .menu.activate {
+    right: -1.75%;
+    transform: translateY(-1px);
+  }
+  .menu.activate:hover .control .left {
+    font-size: 1rem;
+  }
+  .nav .logo img {
+    width: 40%;
+    height: 37.5%;
+    transform: translate(5px, -25px);
+  }
+  .nav .logo h1 {
+    font-size: 1.1em;
+    transform: translateX(5px);
+  }
+  .nav .logo p {
+    margin-top: 1.25rem;
+    font-size: 1.1em;
+    transform: translateX(5px);
+  }
+  .nav .social {
+    margin-top: 0%;
+  }
+  .social div {
+    width: 70px;
+    height: 65px;
+  }
+  .social div:hover {
+    width: 70px;
+    height: 65px;
+  }
+  .social .cards:hover a {
+    font-size: 3rem;
+  }
+  .navbar .ul_container.activate {
+    transform: translate(-2%, 2.5px);
+  }
+  .navbar ul a {
+    letter-spacing: 1.5px;
+    font-size: 0.6em;
+  }
+  .content.activate .clip1 video {
+    transform: scaleY(2.3) scaleX(1) translateY(-2px) rotateY(-180deg) translateX(37px);
+  }
+  .content.activate .clip2 .speech {
+    right: -125px;
+    transform: translate(-42.5%, -52%);
+    font-size: 16px;
+    line-height: 60px;
+  }
+  .content.activate .clip2 .one .sp1, 
+  .content.activate .clip2 .two .sp1 {
+    letter-spacing: 2px;
+    transform: translateX(-34.5%);
+  }
+  .content.activate .clip2 .one .sp2, 
+  .content.activate .clip2 .two .sp2 {
+    letter-spacing: 3.5px;
+    transform: translateX(-26%);
+  }
+  .clip2 .one .sp3, .clip2 .two .sp3 {
+    letter-spacing: 2px;
+  }
+  .clip2 .one .sp4, .clip2 .two .sp4 {
+    letter-spacing: 1px;
+  }
+  .about .section1 h1 {
+    height: 40px;
+    font-size: 1.5em;
+  }
+  .content.activate .about .section1 p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .section2 h2 {
+    height: 40px;
+    font-size: 1.25em;
+  }
+  .skilles .skille h3 {
+    font-size: 16px;
+  }
+  .skille .skl {
+    height: 45px;
+  }
+  .skl h4 {
+    font-size: 11px;
+    line-height: 16px;
+  }
+}
+@media only screen and (device-width: 896px) and (device-height: 414px) {
+  .body:before {
+    transform: rotate(-90deg) translate(499px, -79px) scale(1.1);
+    background: url(../media/mobilesimg.png) no-repeat center center;
+  }
+  .menu {
+    right: 2.5%;
+  }
+  .menu.activate {
+    right: -0.75%;
+    transform: translateY(-5px);
+  }
+  .menu.activate .control i {
+    font-size: 1.25rem;
+  }
+  .menu.activate:hover .control .left {
+    font-size: 1.25rem;
+  }
+  .nav {
+    width: 101%;
+    min-height: 101vh;
+    right: -1px;
+  }
+  .nav .logo {
+    transform: translateY(40px);
+  }
+  .nav .logo img {
+    width: 15%;
+    height: 55%;
+    transform: translateY(-30px);
+  }
+  .nav .logo h1 {
+    font-size: 1em;
+    margin-top: 0%;
+  }
+  .nav .logo p {
+    margin-top: 0.75rem;
+    font-size: 1em;
+    line-height: 25px;
+  }
+  .nav .social {
+    margin-top: 1.5%;
+  }
+  .social div {
+    width: 70px;
+    height: 65px;
+  }
+  .social div:hover {
+    width: 70px;
+    height: 65px;
+  }
+  .social .cards:hover a {
+    font-size: 3rem;
+  }
+  .navbar {
+    min-height: 40px;
+  }
+  .navbar.activate::before {
+    transform: translateX(0%) scaleX(1.5);
+  }
+  .navbar .ul_container.activate {
+    transform: translate(0%, 5%);
+  }
+  .navbar ul a {
+    letter-spacing: 2px;
+  }
+  .content.activate .clip1 video {
+    transform: scaleY(1.1) scaleX(1.5) translateY(13px) rotateY(0deg) translateX(-152px);
+  }
+  .content.activate .clip2 .speech {
+    right: -125px;
+    transform: translate(-0%, -60%);
+    font-size: 16px;
+    line-height: 40px;
+  }
+  .content.activate .clip2 .one .sp1, 
+  .content.activate .clip2 .two .sp1 {
+    letter-spacing: 6px;
+    transform: translateX(-70%);
+  }
+  .content.activate .clip2 .one .sp2, 
+  .content.activate .clip2 .two .sp2 {
+    letter-spacing: 8.5px;
+    transform: translateX(-48%);
+  }
+  .clip2 .one .sp3, .clip2 .two .sp3 {
+    letter-spacing: 6px;
+  }
+  .clip2 .one .sp4, .clip2 .two .sp4 {
+    letter-spacing: 6px;
+  }
+  .content.activate .about {
+    padding-top: 14vh;
+  }
+  .about .about_content {
+    min-height: 82vh;
+    max-height: 82vh;
+    overflow-y: scroll;
+  }
+  .about .section1 h1 {
+    height: 40px;
+    font-size: 1.5em;
+  }
+  .content.activate .about .section1 p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .section2 h2 {
+    height: 40px;
+    font-size: 1.25em;
+  }
+  .skilles .skille h3 {
+    font-size: 16px;
+  }
+  .skille .skl {
+    height: 40px;
+  }
+  .skl h4 {
+    font-size: 11px;
+    line-height: 16px;
+  }
+}
+
+/* iphone 11, 12 */
+@media only screen and (device-width: 390px) and (device-height: 844px) {
+  .body:before {
+    transform: translateX(0px);
+    width: 414px;
+    height: 896px;
+    background:linear-gradient(45deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.75)), url(../media/3.jpg) no-repeat center center;
+    background-size: cover;
+    background-position-x: 23%;
+  }
+  .body::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: ;
+  }
+  .menu {
+    right: 1.5%;
+  }
+  .menu.activate {
+    right: -1.75%;
+    transform: translateY(-1px);
+  }
+  .menu.activate:hover .control .left {
+    font-size: 1rem;
+  }
+  .nav .logo img {
+    width: 40%;
+    height: 37.5%;
+    transform: translate(5px, -25px);
+  }
+  .nav .logo h1 {
+    font-size: 1.1em;
+    transform: translateX(5px);
+  }
+  .nav .logo p {
+    margin-top: 1.25rem;
+    font-size: 1.1em;
+    transform: translateX(5px);
+  }
+  .nav .social {
+    margin-top: 0%;
+  }
+  .social div {
+    width: 70px;
+    height: 65px;
+  }
+  .social div:hover {
+    width: 70px;
+    height: 65px;
+  }
+  .social .cards:hover a {
+    font-size: 3rem;
+  }
+  .navbar .ul_container.activate {
+    transform: translate(-2%, 2.5px);
+  }
+  .navbar ul a {
+    letter-spacing: 1.5px;
+    font-size: 0.6em;
+  }
+  .content.activate .clip1 video {
+    transform: scaleY(2.3) scaleX(1) translateY(-2px) rotateY(-180deg) translateX(37px);
+  }
+  .content.activate .clip2 .speech {
+    right: -125px;
+    transform: translate(-42.5%, -52%);
+    font-size: 16px;
+    line-height: 60px;
+  }
+  .content.activate .clip2 .one .sp1, 
+  .content.activate .clip2 .two .sp1 {
+    letter-spacing: 2px;
+    transform: translateX(-34.5%);
+  }
+  .content.activate .clip2 .one .sp2, 
+  .content.activate .clip2 .two .sp2 {
+    letter-spacing: 3.5px;
+    transform: translateX(-26%);
+  }
+  .clip2 .one .sp3, .clip2 .two .sp3 {
+    letter-spacing: 2px;
+  }
+  .clip2 .one .sp4, .clip2 .two .sp4 {
+    letter-spacing: 1px;
+  }
+  .about .section1 h1 {
+    height: 40px;
+    font-size: 1.5em;
+  }
+  .content.activate .about .section1 p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .section2 h2 {
+    height: 40px;
+    font-size: 1.25em;
+  }
+  .skilles .skille h3 {
+    font-size: 16px;
+  }
+  .skille .skl {
+    height: 45px;
+  }
+  .skl h4 {
+    font-size: 11px;
+    line-height: 16px;
+  }
+}
+@media only screen and (device-width: 844px) and (device-height: 390px) {
+  .body:before {
+    transform: rotate(-90deg) translate(510px, -79px) scale(1.1);
+    background: url(../media/mobilesimg.png) no-repeat center center;
+  }
+  .menu {
+    right: 2.5%;
+  }
+  .menu.activate {
+    right: -0.75%;
+    transform: translateY(-5px);
+  }
+  .menu.activate .control i {
+    font-size: 1.25rem;
+  }
+  .menu.activate:hover .control .left {
+    font-size: 1.25rem;
+  }
+  .nav {
+    width: 101%;
+    min-height: 101vh;
+    right: -1px;
+  }
+  .nav .logo {
+    transform: translateY(40px);
+  }
+  .nav .logo img {
+    width: 15%;
+    height: 55%;
+    transform: translateY(-30px);
+  }
+  .nav .logo h1 {
+    font-size: 1em;
+    margin-top: 0%;
+  }
+  .nav .logo p {
+    margin-top: 0.75rem;
+    font-size: 1em;
+    line-height: 25px;
+  }
+  .nav .social {
+    margin-top: 1.5%;
+  }
+  .social div {
+    width: 70px;
+    height: 65px;
+  }
+  .social div:hover {
+    width: 70px;
+    height: 65px;
+  }
+  .social .cards:hover a {
+    font-size: 3rem;
+  }
+  .navbar {
+    min-height: 40px;
+  }
+  .navbar.activate::before {
+    transform: translateX(0%) scaleX(1.5);
+  }
+  .navbar .ul_container.activate {
+    transform: translate(0%, 5%);
+  }
+  .navbar ul a {
+    letter-spacing: 2px;
+  }
+  .content.activate .clip1 video {
+    transform: scaleY(1.1) scaleX(1.5) translateY(13px) rotateY(0deg) translateX(-152px);
+  }
+  .content.activate .clip2 .speech {
+    right: -125px;
+    transform: translate(-0%, -60%);
+    font-size: 16px;
+    line-height: 40px;
+  }
+  .content.activate .clip2 .one .sp1, 
+  .content.activate .clip2 .two .sp1 {
+    letter-spacing: 6px;
+    transform: translateX(-70%);
+  }
+  .content.activate .clip2 .one .sp2, 
+  .content.activate .clip2 .two .sp2 {
+    letter-spacing: 8.5px;
+    transform: translateX(-48%);
+  }
+  .clip2 .one .sp3, .clip2 .two .sp3 {
+    letter-spacing: 6px;
+  }
+  .clip2 .one .sp4, .clip2 .two .sp4 {
+    letter-spacing: 6px;
+  }
+  .content.activate .about {
+    padding-top: 14vh;
+  }
+  .about .about_content {
+    min-height: 82vh;
+    max-height: 82vh;
+    overflow-y: scroll;
+  }
+  .about .section1 h1 {
+    height: 40px;
+    font-size: 1.5em;
+  }
+  .content.activate .about .section1 p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .section2 h2 {
+    height: 40px;
+    font-size: 1.25em;
+  }
+  .skilles .skille h3 {
+    font-size: 16px;
+  }
+  .skille .skl {
+    height: 40px;
+  }
+  .skl h4 {
+    font-size: 11px;
+    line-height: 16px;
+  }
+}
+
+/* iphone 12 pro max */
+@media only screen and (device-width: 428px) and (device-height: 926px) {
+  .body:before {
+    transform: translateX(0px);
+    width: 430px;
+    height: 930px;
+  }
+  .menu {
+    right: 1.5%;
+  }
+  .menu.activate {
+    right: -1.75%;
+    transform: translateY(-1px);
+  }
+  .menu.activate:hover .control .left {
+    font-size: 1rem;
+  }
+  .nav .logo img {
+    width: 40%;
+    height: 37.5%;
+    transform: translate(5px, -25px);
+  }
+  .nav .logo h1 {
+    font-size: 1.1em;
+    transform: translateX(5px);
+  }
+  .nav .logo p {
+    margin-top: 1.25rem;
+    font-size: 1.1em;
+    transform: translateX(5px);
+  }
+  .nav .social {
+    margin-top: 0%;
+  }
+  .social div {
+    width: 70px;
+    height: 65px;
+  }
+  .social div:hover {
+    width: 70px;
+    height: 65px;
+  }
+  .social .cards:hover a {
+    font-size: 3rem;
+  }
+  .navbar .ul_container.activate {
+    transform: translate(-2%, 2.5px);
+  }
+  .navbar ul a {
+    letter-spacing: 1.5px;
+    font-size: 0.75em;
+  }
+  .content.activate .clip1 video {
+    transform: scaleY(2.3) scaleX(1) translateY(-2px) rotateY(-180deg) translateX(35px);
+  }
+  .content.activate .clip2 .speech {
+    right: -125px;
+    transform: translate(-42.5%, -52%);
+    font-size: 16px;
+    line-height: 60px;
+  }
+  .content.activate .clip2 .one .sp1, 
+  .content.activate .clip2 .two .sp1 {
+    letter-spacing: 2px;
+    transform: translateX(-34.5%);
+  }
+  .content.activate .clip2 .one .sp2, 
+  .content.activate .clip2 .two .sp2 {
+    letter-spacing: 3.5px;
+    transform: translateX(-26%);
+  }
+  .clip2 .one .sp3, .clip2 .two .sp3 {
+    letter-spacing: 2px;
+  }
+  .clip2 .one .sp4, .clip2 .two .sp4 {
+    letter-spacing: 1px;
+  }
+  .about .about_content {
+    overflow-y: hidden;
+  }
+  .about .section1 h1 {
+    height: 40px;
+    font-size: 1.5em;
+  }
+  .content.activate .about .section1 p {
+    font-size: 16px;
+    line-height: 23px;
+  }
+  .section2 h2 {
+    height: 40px;
+    font-size: 1.25em;
+  }
+  .skilles .skille h3 {
+    font-size: 16px;
+  }
+  .skille .skl {
+    height: 45px;
+  }
+  .skl h4 {
+    font-size: 11px;
+    line-height: 16px;
+  }
+}
+@media only screen and (device-width: 926px) and (device-height: 428px) {
+  .body:before {
+    transform: rotate(-90deg) translate(492px, -60px) scale(1.2);
+    background: url(../media/mobilesimg.png) no-repeat center center;
+  }
+  .menu {
+    right: 2.5%;
+  }
+  .menu.activate {
+    right: -0.75%;
+    transform: translateY(-5px);
+  }
+  .menu.activate .control i {
+    font-size: 1.25rem;
+  }
+  .menu.activate:hover .control .left {
+    font-size: 1.25rem;
+  }
+  .nav {
+    width: 101%;
+    min-height: 101vh;
+    right: -1px;
+  }
+  .nav .logo {
+    transform: translateY(40px);
+  }
+  .nav .logo img {
+    width: 15%;
+    height: 55%;
+    transform: translateY(-30px);
+  }
+  .nav .logo h1 {
+    font-size: 1em;
+    margin-top: 0%;
+  }
+  .nav .logo p {
+    margin-top: 0.75rem;
+    font-size: 1em;
+    line-height: 25px;
+  }
+  .nav .social {
+    margin-top: 1.5%;
+  }
+  .social div {
+    width: 70px;
+    height: 65px;
+  }
+  .social div:hover {
+    width: 70px;
+    height: 65px;
+  }
+  .social .cards:hover a {
+    font-size: 3rem;
+  }
+  .navbar {
+    min-height: 40px;
+  }
+  .navbar.activate::before {
+    transform: translateX(0%) scaleX(1.5);
+  }
+  .navbar .ul_container.activate {
+    transform: translate(0%, 5%);
+  }
+  .navbar ul a {
+    letter-spacing: 2px;
+  }
+  .content.activate .clip1 video {
+    transform: scaleY(1.1) scaleX(1.5) translateY(13px) rotateY(0deg) translateX(-155px);
+  }
+  .content.activate .clip2 .speech {
+    right: -125px;
+    transform: translate(-0%, -60%);
+    font-size: 16px;
+    line-height: 40px;
+  }
+  .content.activate .clip2 .one .sp1, 
+  .content.activate .clip2 .two .sp1 {
+    letter-spacing: 6px;
+    transform: translateX(-70%);
+  }
+  .content.activate .clip2 .one .sp2, 
+  .content.activate .clip2 .two .sp2 {
+    letter-spacing: 8.5px;
+    transform: translateX(-48%);
+  }
+  .clip2 .one .sp3, .clip2 .two .sp3 {
+    letter-spacing: 6px;
+  }
+  .clip2 .one .sp4, .clip2 .two .sp4 {
+    letter-spacing: 6px;
+  }
+  .content.activate .about {
+    padding-top: 14vh;
+  }
+  .about .about_content {
+    min-height: 82vh;
+    max-height: 82vh;
+    overflow-y: scroll;
+  }
+  .about .section1 h1 {
+    height: 40px;
+    font-size: 1.5em;
+  }
+  .content.activate .about .section1 p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .section2 h2 {
+    height: 40px;
+    font-size: 1.25em;
+  }
+  .skilles .skille h3 {
+    font-size: 16px;
+  }
+  .skille .skl {
+    height: 40px;
+  }
+  .skl h4 {
+    font-size: 11px;
+    line-height: 16px;
+  }
+}
